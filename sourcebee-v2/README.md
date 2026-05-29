@@ -1,4 +1,4 @@
-# SourceBee — v3 (Production)
+# SourceBee — v2 (Production)
 
 > *Shop It. We Source It. We Deliver It.* · Full-featured production build
 
@@ -7,7 +7,7 @@
 
 This is the current production version. See the root [README](../README.md) for the full story.
 
-## Everything in v3
+## Everything in v2
 
 - 🛍️ 30+ products across 9 categories
 - 🌍 All 36 Nigerian states + FCT delivery
@@ -22,7 +22,7 @@ This is the current production version. See the root [README](../README.md) for 
 ## File Structure
 
 ```
-sourcebee-v3/
+sourcebee-v2/
 ├── index.html
 ├── assets/
 │   └── logo.png
@@ -41,9 +41,9 @@ sourcebee-v3/
     └── auth.js        # Firebase auth
 ```
 
-## What Changed from v2
+## What Changed from v1
 
-| v2 | v3 |
+| v1 | v2 |
 |----|-----|
 | 12 states | All 36 states + FCT |
 | No chatbot | Bee smart chatbot |
@@ -57,4 +57,4 @@ sourcebee-v3/
 
 Update `js/config.js` with WhatsApp number, bank details, Firebase config, EmailJS keys and ADMIN_EMAIL. Deploy by dragging folder to netlify.com. Add Netlify URL to Firebase authorized domains.
 
-*See [sourcebee-v2](../sourcebee-v2) for the previous version.*
+*See [sourcebee-v2](../sourcebee-v1) for the previous version.*
