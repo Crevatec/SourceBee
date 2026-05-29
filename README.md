@@ -21,12 +21,12 @@ website — from a first working version to a production-ready platform.
 ```
 sourcebee/
 ├── README.md               ← You are here — full project story
-├── sourcebee-v2/           ← First build — modular architecture + Firestore
+├── sourcebee-v1/           ← First build — modular architecture + Firestore
 │   ├── index.html
 │   ├── css/styles.css
 │   ├── js/  (7 files)
 │   └── README.md
-└── sourcebee-v3/           ← Current production — full featured
+└── sourcebee-v2/           ← Current production — full featured
     ├── index.html
     ├── assets/logo.png
     ├── css/styles.css
@@ -34,20 +34,20 @@ sourcebee/
     └── README.md
 ```
 
-> **Want to deploy?** Use `sourcebee-v3` — it is the current live version.
-> `sourcebee-v2` is kept to document growth and for reference.
+> **Want to deploy?** Use `sourcebee-v2` — it is the current live version.
+> `sourcebee-v1` is kept to document growth and for reference.
 
 ---
 
 ## 🚀 The Growth Story
 
-### v2 — First Build: Breaking the Monolith
+### v1 — First Build: Breaking the Monolith
 
 The project started life as a single 1,680-line `index.html` file (the S&E Enterprise template).
 For SourceBee, the entire codebase was broken apart into focused modules, a real database was
 connected, and a seller dashboard was introduced for the first time.
 
-**What v2 introduced:**
+**What v1 introduced:**
 - Split into **7 JS modules** — each file has one job
 - **Firestore database** — every order is saved, not just sent to WhatsApp
 - **Firebase Authentication** — Google + email/password login
@@ -56,7 +56,7 @@ connected, and a seller dashboard was introduced for the first time.
 - **Seller dashboard** — add/edit products, view orders
 - **EmailJS** — automatic order confirmation emails
 
-**What v2 was missing:**
+**What v1 was missing:**
 - Only 12 Nigerian states in delivery
 - No way for customers to verify payment
 - No official receipt for customers
@@ -65,13 +65,13 @@ connected, and a seller dashboard was introduced for the first time.
 
 ---
 
-### v3 — Production: Complete Platform
+### v2 — Production: Complete Platform
 
-Built directly on v2, every gap was closed. The codebase grew from 7 to 10 JS files. Three
+Built directly on v1, every gap was closed. The codebase grew from 7 to 10 JS files. Three
 entirely new systems were added — the chatbot, the confirmation code system, and the self-upload
 admin panel — turning the website from a storefront into a complete business tool.
 
-**What v3 added:**
+**What v2 added:**
 
 | Feature | Detail |
 |---------|--------|
@@ -88,7 +88,7 @@ admin panel — turning the website from a storefront into a complete business t
 
 ## 📊 Version Comparison
 
-| | v2 | v3 |
+| | v1 | v2 |
 |---|---|---|
 | **JS files** | 7 | 10 |
 | **Total lines of code** | ~1,400 | ~2,800 |
@@ -182,10 +182,10 @@ receipt.js   (v3)  ← Confirmation code verifier + PDF receipt
 
 ---
 
-## ⚙️ Setup (v3)
+## ⚙️ Setup (v2)
 
 ### 1 — config.js
-Open `sourcebee-v3/js/config.js` and update:
+Open `sourcebee-v2/js/config.js` and update:
 
 ```js
 WHATSAPP_NUMBER: '2349020740713',   // International format, no +
@@ -205,13 +205,13 @@ FIREBASE: { /* paste your Firebase config object here */ },
 3. Firestore Database → Create database → Start in test mode
 
 ### 3 — Deploy
-1. Drag `sourcebee-v3` folder to [netlify.com](https://netlify.com)
+1. Drag `sourcebee-v2` folder to [netlify.com](https://netlify.com)
 2. Copy the Netlify URL (e.g. `sourcebee.netlify.app`)
 3. Firebase → Authentication → Authorized domains → Add domain → paste URL
 
 ---
 
-## 📅 Planned for v4
+## 📅 Planned for v3
 
 - [ ] Cloudinary image upload — product photos directly from phone
 - [ ] Real-time order notifications for admin
