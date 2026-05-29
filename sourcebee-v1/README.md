@@ -1,4 +1,4 @@
-# SourceBee — v2
+# SourceBee — v1
 
 > *Shop It. We Source It. We Deliver It.* · First modular build
 
@@ -20,7 +20,7 @@ a Firestore database to save orders, and introducing a seller dashboard.
 
 ---
 
-## What Was Built in v2
+## What Was Built in v1
 
 - 🔀 Split 1 monolithic file into **9 focused JS modules**
 - 🗄️ Connected **Firestore** — every order is saved to the database
@@ -76,9 +76,9 @@ const CONFIG = {
 
 ---
 
-## What Was Missing (Fixed in v3)
+## What Was Missing (Fixed in v2)
 
-| Gap in v2 | Solution in v3 |
+| Gap in v1 | Solution in v2 |
 |-----------|---------------|
 | Only 12 states in delivery | All 36 states + FCT |
 | No chatbot | Bee — smart rule-based assistant |
@@ -90,4 +90,4 @@ const CONFIG = {
 
 ---
 
-*See [sourcebee-v3](../sourcebee-v3) for the current production version.*
+*See [sourcebee-v3](../sourcebee-v2) for the current production version.*
